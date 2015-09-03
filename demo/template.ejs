@@ -1,0 +1,13 @@
+<html>
+  <head>
+    <title>Ducks Component Experiment</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+  </head>
+  <body>
+    <div id="outlet"><%- html %></div>
+    <script>window.__redux_data__ = <%- JSON.stringify(data) %>;</script>
+    <% for (var chunk in assets) { -%>
+    <script src="<%= assets[chunk] %>"></script>
+    <% } -%>
+  </body>
+</html>
