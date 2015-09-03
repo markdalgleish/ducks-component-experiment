@@ -6,5 +6,5 @@ Warning: This is still very much a work in progress.
 
 ```bash
 $ npm install
-$ npm run build
+$ npm start
 ```

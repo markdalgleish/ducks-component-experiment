@@ -7,7 +7,7 @@
   "scripts": {
     "clean": "rm -rf demo-dist",
     "build": "npm run clean && webpack",
-    "start": "npm run clean && node webpack-dev-server & opn http://localhost:8080",
+    "start": "npm run clean && opn http://localhost:8080 && node webpack-dev-server",
     "prepublish": "npm run build",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -23,7 +23,7 @@
     "less": "^2.5.0",
     "less-loader": "^2.2.0",
     "lodash.mapvalues": "^3.0.0",
-    "opn": "^1.0.1",
+    "opn": "^3.0.2",
     "react": "^0.13.2",
     "react-hot-loader": "^1.1.5",
     "react-redux": "^2.0.0",
