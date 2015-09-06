@@ -7,9 +7,15 @@ export default class Counter extends Component {
   };
 
   render() {
-    const { count } = this.props;
+    const { count, handleIncrement, handleDecrement } = this.props;
 
-    return <div>Count: { count }</div>;
+    return (
+      <div>
+        <span>Count: { count }</span>
+        <button onClick={handleIncrement}>+</button>
+        <button onClick={handleDecrement}>-</button>
+      </div>
+    );
   }
 
 };
